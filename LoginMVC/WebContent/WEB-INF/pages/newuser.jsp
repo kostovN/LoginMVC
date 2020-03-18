@@ -34,6 +34,9 @@
 				<td><c:out value="${requestScope.errorMessage}"></c:out></td>
 				<td><c:out value="${requestScope.validationError}"></c:out></td>
 			</tr>
+			<tr>
+				<td><a href="../users/back">Back</a></td>
+			</tr>
 
 		</table>
 	</form>

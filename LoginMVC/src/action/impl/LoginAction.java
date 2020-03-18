@@ -31,6 +31,8 @@ public class LoginAction extends AbstractAction {
 					page = "/WEB-INF/pages/login.jsp";
 					request.setAttribute("errorMessage", "User is already logged in!");
 				}else {
+					HttpSession session = request.getSession(true);
+					session.setAttribute("user", user);
 					usersLog.add(user);
 					page = "/index.jsp";
 				}
